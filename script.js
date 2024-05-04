@@ -3,10 +3,12 @@ const message = document.getElementById('message');
 const restart = document.getElementById('restart');
 let currentPlayer = 'X';
 let gameActive = true;
-let board = ['', '', '', '', '', '', '', '', ''];
+let board = ['', '', '', '', '', '', '', '', '']; //initializing board array
 
 function handleCellClick(event) {
     const cell = event.target;
+    console.log(event.target);
+    // console.log(cell.dataset);
     const index = parseInt(cell.dataset.index);
 
     if (board[index] === '' && gameActive) {
