@@ -37,3 +37,6 @@ Here's what each part of `grid-template-columns: repeat(3, 100px);` and `grid-te
 So, the combination of `grid-template-columns: repeat(3, 100px);` and `grid-template-rows: repeat(3, 100px);` sets up a grid layout with 3 columns and 3 rows, each with a fixed size of `100px`. 
 
 This is commonly used for creating grid-based layouts where you want a specific number of columns and rows with consistent sizes. In the context of the Tic Tac Toe game, this layout ensures that the game board consists of 3 rows and 3 columns, with each cell having a fixed size of `100px`. */
+
+/* What do grid-template-columns repeat do?
+Instead, we can write this: grid-template-columns: repeat(5, 1fr); In the example above, the repeat() function lets us specify how many columns we want ( 5 ), and what size they should all be ( 1fr — or one fraction of the available space) */
